@@ -48,7 +48,7 @@ See [CHANGELOG](CHANGELOG.md) for details on what has changed.
 
 ## About
 
-I organize the #gm48, a quarterly 48 hours #GameMaker game jam, and I work as a Web Developer in Denmark on Laravel and WordPress websites.
+I organize the [gm(48)](https://gm48.net), a quarterly 48 hours GameMaker game jam, and I work as a Web Developer in Denmark on Laravel and WordPress websites.
 
 Follow me[@tehwave](https://twitter.com/tehwave) on Twitter!
 
