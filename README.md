@@ -48,9 +48,9 @@ See [CHANGELOG](CHANGELOG.md) for details on what has changed.
 
 ## About
 
-I'm a web developer from Denmark.
+I organize the #gm48, a quarterly 48 hours #GameMaker game jam, and I work as a Web Developer in Denmark on Laravel and WordPress websites.
 
-Hit me up [@tehwave](https://twitter.com/tehwave) on Twitter!
+Follow me[@tehwave](https://twitter.com/tehwave) on Twitter!
 
 ## License
 
