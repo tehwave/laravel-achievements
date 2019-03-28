@@ -24,6 +24,13 @@
             "tehwave\\Achievements\\": "src"
         }
     },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "tehwave\\Achievements\\AchievementsServiceProvider"
+            ]
+        }
+    },
     "config": {
         "sort-packages": true
     }
