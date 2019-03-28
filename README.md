@@ -49,7 +49,7 @@ php artisan vendor:publish --tag="achievements-config"
 php artisan make:achievement UsersFirstPost
 ```
 
-This command will place a fresh `Achievement` class in your new `app/Achievements` directory. Each `Achievement` class contains a `toDatabase` method, that you may use to store additional data with the achievement, and couple of variables for meta information.
+This command will place a fresh `Achievement` class in your new `app/Achievements` directory. Each `Achievement` class contains a `toDatabase` method, that you may use to store additional data with the achievement, and a couple of variables for meta information.
 
 ### Unlocking Achievements
 
