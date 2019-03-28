@@ -59,7 +59,7 @@ class Achievement implements AchievementContract
         $achiever->achievements()->create([
             'id' => Str::uuid()->toString(),
             'type' => get_class($achievement),
-            'data' => $achievement->getData(),
+            'data' => $achievement->getData($achievement),
         ]);
     }
 }
