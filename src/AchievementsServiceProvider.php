@@ -8,7 +8,7 @@ use tehwave\Achievements\Commands\MakeAchievement;
 class AchievementsServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap the application services.
+     * Perform post-registration booting of services.
      *
      * @return void
      */
@@ -18,19 +18,10 @@ class AchievementsServiceProvider extends ServiceProvider
             __DIR__ . '/../config/achievements.php' => config_path('achievements.php'),
         ], 'config');
 
-        $this->bootCommands();
-    }
         $this->publishes([
             __DIR__ . '/../database/migrations/2019_00_00_000000_create_achievements_table.php' => database_path('migrations')
         ], 'migrations');
 
-    /**
-     * Boot the commands.
-     *
-     * @return void
-     */
-    private function bootCommands()
-    {
         if ($this->app->runningInConsole()) {
             $this->commands([
                 MakeAchievement::class,
