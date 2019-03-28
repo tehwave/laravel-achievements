@@ -52,11 +52,11 @@ class Achievement implements AchievementContract
      * @param  mixed  $achievers
      * @param  mixed  $achievement
      *
-     * @return void
+     * @return \Illuminate\Database\Eloquent\Model
      */
     public static function unlock($achiever, $achievement)
     {
-        $achiever->achievements()->create([
+        return $achiever->achievements()->create([
             'id' => Str::uuid()->toString(),
             'type' => get_class($achievement),
             'data' => $achievement->getData($achievement),
