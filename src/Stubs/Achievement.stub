@@ -1,0 +1,22 @@
+<?php
+
+namespace DummyNamespace;
+
+use tehwave\Achievements\Achievement;
+
+class DummyClass extends Achievement
+{
+    /**
+     * The name of this achievement.
+     *
+     * @var string
+     */
+    public $name = "DummyClass";
+
+    /**
+     * The description of this achievement.
+     *
+     * @var string
+     */
+    public $description = "";
+}
