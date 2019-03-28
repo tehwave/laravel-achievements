@@ -70,7 +70,7 @@ class User
 }
 ```
 
-*Achieve* an achievement.
+*Achieve* an achievement via the `achieve` method.
 
 ```php
 $user = App\User::find(1);
@@ -78,7 +78,7 @@ $user = App\User::find(1);
 $user->achieve(new UsersFirstPost());
 ```
 
-...or use `Achievement` to unlock achievements.
+...or use `Achievement` class to unlock achievements.
 
 ```php
 $user = App\User::find(1);
@@ -88,7 +88,7 @@ Achievement::unlock($user, new UsersFirstPost());
 
 ### Accessing Achievements
 
-Get all of the achievements unlocked.
+Retrieve all of the entity's unlocked achievements.
 
 ```php
 $user = App\User::find(1);
