@@ -5,7 +5,7 @@ namespace tehwave\Achievements;
 use Illuminate\Support\Str;
 use tehwave\Achievements\Contracts\AchievementContract;
 
-abstract class Achievement implements AchievementContract
+class Achievement implements AchievementContract
 {
     /**
      * The unique identifier for the achievement.
