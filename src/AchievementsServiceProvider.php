@@ -21,7 +21,7 @@ class AchievementsServiceProvider extends ServiceProvider
         $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
 
         $this->publishes([
-            __DIR__ . '/../database/migrations/2019_00_00_000000_create_achievements_table.php' => database_path('migrations')
+            __DIR__ . '/../database/migrations/' => database_path('migrations')
         ], 'achievements-migrations');
 
         if ($this->app->runningInConsole()) {
