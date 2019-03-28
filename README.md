@@ -25,7 +25,60 @@ composer require tehwave/laravel-achievements
 
 ## Usage
 
-TODO
+`Laravel Achievements` work much like Laravel's notifications.
+
+### Creating Achievements
+
+```bash
+php artisan make:achievement UsersFirstPost
+```
+
+This command will place a fresh `Achievement` class in your new `app/Achievements` directory. Each `Achievement` class contains a `toDatabase` method, that you may use to store additional data with the achievement, and couple of additional variables for meta information.
+
+### Unlocking Achievements
+
+Use `Achiever` trait on entities that can unlock achievements.
+
+```php
+    <?php
+
+    namespace App;
+
+    use tehwave\Achievements\Traits\Achiever;
+
+    class User
+    {
+        use Achiever;
+
+        // ...
+    }
+```
+
+*Achieve* an achievement.
+
+```php
+    $user = App\User::find(1);
+
+    $user->achieve(new UsersFirstPost());
+```
+
+...or use `Achievement` to unlock achievements.
+
+```php
+    $user = App\User::find(1);
+
+    Achievement::unlock($user, new UsersFirstPost());
+```
+
+### Accessing Achievements
+
+Get all of the achievements unlocked.
+
+```php
+    $user = App\User::find(1);
+
+    $user->achievements()->get();
+```
 
 ## Tests
 
