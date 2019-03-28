@@ -15,13 +15,13 @@ class AchievementsServiceProvider extends ServiceProvider
     public function boot()
     {
         $this->publishes([
-            __DIR__ . '/../config/achievements.php' => config_path('achievements.php'),
+            __DIR__.'/../config/achievements.php' => config_path('achievements.php'),
         ], 'achievements-config');
 
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
         $this->publishes([
-            __DIR__ . '/../database/migrations/' => database_path('migrations')
+            __DIR__.'/../database/migrations/' => database_path('migrations'),
         ], 'achievements-migrations');
 
         if ($this->app->runningInConsole()) {
@@ -38,6 +38,6 @@ class AchievementsServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/achievements.php', 'achievements');
+        $this->mergeConfigFrom(__DIR__.'/../config/achievements.php', 'achievements');
     }
 }

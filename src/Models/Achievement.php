@@ -39,7 +39,8 @@ class Achievement extends Model
     /**
      * Get the achiever entity that the achievement belongs to.
      */
-    public function achiever() {
+    public function achiever()
+    {
         return $this->morphTo();
     }
 }

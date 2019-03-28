@@ -3,10 +3,7 @@
 namespace tehwave\Achievements;
 
 use Illuminate\Support\Str;
-use Illuminate\Support\Collection;
-use Illuminate\Database\Eloquent\Model;
 use tehwave\Achievements\Contracts\AchievementContract;
-use Illuminate\Database\Eloquent\Collection as ModelCollection;
 
 abstract class Achievement implements AchievementContract
 {
@@ -57,8 +54,9 @@ abstract class Achievement implements AchievementContract
      *
      * @return void
      */
-    public static function unlock($achiever, $achievement) {
-       $achiever->achievements()->create([
+    public static function unlock($achiever, $achievement)
+    {
+        $achiever->achievements()->create([
             'id' => Str::uuid()->toString(),
             'type' => get_class($achievement),
             'data' => $achievement->getData(),
