@@ -16,11 +16,11 @@ class AchievementsServiceProvider extends ServiceProvider
     {
         $this->publishes([
             __DIR__ . '/../config/achievements.php' => config_path('achievements.php'),
-        ], 'config');
+        ], 'achievements-config');
 
         $this->publishes([
             __DIR__ . '/../database/migrations/2019_00_00_000000_create_achievements_table.php' => database_path('migrations')
-        ], 'migrations');
+        ], 'achievements-migrations');
 
         if ($this->app->runningInConsole()) {
             $this->commands([
