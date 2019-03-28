@@ -75,7 +75,7 @@ class User
 ```php
 $user = App\User::find(1);
 
-$user->achieve(new UsersFirstPost());
+$user->achieve(new \App\Achievements\UsersFirstPost());
 ```
 
 ...or use `Achievement` class to unlock achievements.
@@ -83,7 +83,7 @@ $user->achieve(new UsersFirstPost());
 ```php
 $user = App\User::find(1);
 
-Achievement::unlock($user, new UsersFirstPost());
+tehwave\Achievements\Achievement::unlock($user, new \App\Achievements\UsersFirstPost());
 ```
 
 ### Accessing Achievements
