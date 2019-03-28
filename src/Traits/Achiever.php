@@ -2,7 +2,7 @@
 
 namespace tehwave\Achievements\Traits;
 
-use tehwave\Achievements\Achievement;
+use tehwave\Achievements\Models\Achievement;
 
 trait Achiever
 {
