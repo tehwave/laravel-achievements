@@ -7,6 +7,13 @@ Super Simple Achievements.
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/tehwave/laravel-achievements.svg?style=flat-square)](https://packagist.org/packages/tehwave/laravel-achievements)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 
+## Requirements
+
+- Laravel 5.7
+- PHP 7.2
+
+The package supports the above versions, but may work on older or newer versions.
+
 ## Installation
 
 You can install the package via Composer:
