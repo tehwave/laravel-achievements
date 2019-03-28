@@ -20,6 +20,9 @@ class AchievementsServiceProvider extends ServiceProvider
 
         $this->bootCommands();
     }
+        $this->publishes([
+            __DIR__ . '/../database/migrations/2019_00_00_000000_create_achievements_table.php' => database_path('migrations')
+        ], 'migrations');
 
     /**
      * Boot the commands.
@@ -33,6 +36,8 @@ class AchievementsServiceProvider extends ServiceProvider
                 MakeAchievement::class,
             ]);
         }
+
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 
     /**
