@@ -4,10 +4,10 @@
     "keywords": [
         "php",
         "laravel",
-        "package"
+        "package",
         "achievements",
         "badges",
-        "tehwave",
+        "tehwave"
     ],
     "homepage": "https://github.com/tehwave/laravel-achievements",
     "license": "MIT",
