@@ -17,7 +17,7 @@ The package supports the above versions, but may work on older or newer versions
 
 ## Installation
 
-You can install the package via Composer:
+You can install the package via Composer.
 
 ```bash
 composer require tehwave/laravel-achievements
