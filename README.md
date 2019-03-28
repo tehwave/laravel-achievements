@@ -23,6 +23,18 @@ You can install the package via Composer:
 composer require tehwave/laravel-achievements
 ```
 
+Publish migrations.
+
+```bash
+php artisan vendor:publish --tag="achievements-migrations"
+```
+
+As an optional choice, you may publish config as well.
+
+```bash
+php artisan vendor:publish --tag="achievements-config"
+```
+
 ## Usage
 
 `Laravel Achievements` work much like Laravel's notifications.
