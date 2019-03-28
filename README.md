@@ -27,6 +27,12 @@ Publish migrations.
 php artisan vendor:publish --tag="achievements-migrations"
 ```
 
+Migrate the migrations.
+
+```bash
+php artisan migrate
+```
+
 As an optional choice, you may publish config as well.
 
 ```bash
