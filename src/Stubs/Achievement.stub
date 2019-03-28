@@ -11,14 +11,14 @@ class DummyClass extends Achievement
      *
      * @var string
      */
-    protected $name = "DummyClass";
+    public $name = "DummyClass";
 
     /**
      * The description of this achievement.
      *
      * @var string
      */
-    protected $description = "";
+    public $description = "";
 
     /**
      * Get the data representation of the achievement.
