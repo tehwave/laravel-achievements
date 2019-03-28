@@ -8,9 +8,7 @@ use tehwave\Achievements\Commands\MakeAchievement;
 class AchievementsServiceProvider extends ServiceProvider
 {
     /**
-     * Perform post-registration booting of services.
-     *
-     * @return void
+     * Bootstrap the application services.
      */
     public function boot()
     {
@@ -18,7 +16,7 @@ class AchievementsServiceProvider extends ServiceProvider
     }
 
     /**
-     * Boot the custom commands.
+     * Boot the commands.
      *
      * @return void
      */
