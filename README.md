@@ -4,8 +4,11 @@
 
 Super Simple Achievements.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/tehwave/laravel-achievements.svg?style=flat-square)](https://packagist.org/packages/tehwave/laravel-achievements)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+[![Latest Version](https://img.shields.io/packagist/v/tehwave/laravel-achievements.svg?style=flat-square)](https://packagist.org/packages/tehwave/laravel-achievements)
+[![StyleCI](https://styleci.io/repos/178260666/shield)](https://styleci.io/repos/178260666)
+[![Quality Score](https://img.shields.io/scrutinizer/g/tehwave/laravel-achievements.svg?style=flat-square)](https://scrutinizer-ci.com/g/tehwave/laravel-achievements)
+[![Total Downloads](https://img.shields.io/packagist/dt/tehwave/laravel-achievements.svg?style=flat-square)](https://packagist.org/packages/tehwave/laravel-achievements)
 
 ## Requirements
 
