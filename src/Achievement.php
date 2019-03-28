@@ -32,24 +32,6 @@ abstract class Achievement implements AchievementContract
     public $description;
 
     /**
-     * Get the identifier for this achievement.
-     *
-     * @return string
-     */
-    protected function getId() {
-        return $this->id ?? ;
-    }
-
-    /**
-     * Get the type of this achievement.
-     *
-     * @return string
-     */
-    protected function getType() {
-        return get_class($this);
-    }
-
-    /**
      * Get the data of the achievement.
      *
      * @param  mixed  $achievement

@@ -12,5 +12,5 @@ interface AchievementContract
      *
      * @return void
      */
-    public static function unlock($achiever, $achievement)
+    public static function unlock($achiever, $achievement);
 }
