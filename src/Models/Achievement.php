@@ -14,13 +14,6 @@ class Achievement extends Model
     public $incrementing = false;
 
     /**
-     * The table associated with the model.
-     *
-     * @var string
-     */
-    protected $table = config('achievements.table', 'achievements');
-
-    /**
      * The guarded attributes on the model.
      *
      * @var array
@@ -35,6 +28,16 @@ class Achievement extends Model
     protected $casts = [
         'data' => 'array',
     ];
+
+    /**
+     * Get the table associated with the model.
+     *
+     * @return string
+     */
+    public function getTable()
+    {
+        return config('achievements.table', 'achievements');
+    }
 
     /**
      * Get the achiever entity that the achievement belongs to.
