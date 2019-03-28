@@ -7,10 +7,10 @@ interface AchievementContract
     /**
      * Unlocks an achievement.
      *
-     * @param  \Illuminate\Support\Collection|array|mixed  $achievers
+     * @param  mixed  $achiever
      * @param  mixed  $achievement
      *
      * @return void
      */
-    public static function unlock($achievers, $achievement)
+    public static function unlock($achiever, $achievement)
 }

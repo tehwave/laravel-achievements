@@ -70,34 +70,16 @@ abstract class Achievement implements AchievementContract
     /**
      * Unlocks an achievement.
      *
-     * @param  \Illuminate\Support\Collection|array|mixed  $achievers
+     * @param  mixed  $achievers
      * @param  mixed  $achievement
      *
      * @return void
      */
-    public static function unlock($achievers, $achievement) {
-       $achievers = $this->formatAchievers($achievers);
-
-       $achievers->each()->achievements()->create([
+    public static function unlock($achiever, $achievement) {
+       $achiever->achievements()->create([
             'id' => Str::uuid()->toString(),
             'type' => get_class($achievement),
             'data' => $achievement->getData(),
         ]);
-    }
-
-    /**
-     * Format the achievers into a Collection / array if necessary.
-     *
-     * @param  mixed  $achievers
-     * @return \Illuminate\Database\Eloquent\Collection|array
-     */
-    protected function formatAchievers($achievers)
-    {
-        if (! $achievers instanceof Collection && ! is_array($achievers)) {
-            return $achievers instanceof Model
-                            ? new ModelCollection([$achievers]) : [$achievers];
-        }
-
-        return $achievers;
     }
 }
