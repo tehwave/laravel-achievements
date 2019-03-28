@@ -2,11 +2,12 @@
     "name": "tehwave/laravel-achievements",
     "description": "Super Simple Achievements",
     "keywords": [
-        "tehwave",
-        "achievements",
-        "badges",
+        "php",
         "laravel",
         "package"
+        "achievements",
+        "badges",
+        "tehwave",
     ],
     "homepage": "https://github.com/tehwave/laravel-achievements",
     "license": "MIT",
