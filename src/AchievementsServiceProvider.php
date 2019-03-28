@@ -18,6 +18,8 @@ class AchievementsServiceProvider extends ServiceProvider
             __DIR__ . '/../config/achievements.php' => config_path('achievements.php'),
         ], 'achievements-config');
 
+        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
+
         $this->publishes([
             __DIR__ . '/../database/migrations/2019_00_00_000000_create_achievements_table.php' => database_path('migrations')
         ], 'achievements-migrations');
@@ -27,8 +29,6 @@ class AchievementsServiceProvider extends ServiceProvider
                 MakeAchievement::class,
             ]);
         }
-
-        $this->loadMigrationsFrom(__DIR__ . '/../database/migrations');
     }
 
     /**
