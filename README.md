@@ -52,34 +52,34 @@ This command will place a fresh `Achievement` class in your new `app/Achievement
 Use `Achiever` trait on entities that can unlock achievements.
 
 ```php
-    <?php
+<?php
 
-    namespace App;
+namespace App;
 
-    use tehwave\Achievements\Traits\Achiever;
+use tehwave\Achievements\Traits\Achiever;
 
-    class User
-    {
-        use Achiever;
+class User
+{
+    use Achiever;
 
-        // ...
-    }
+    // ...
+}
 ```
 
 *Achieve* an achievement.
 
 ```php
-    $user = App\User::find(1);
+$user = App\User::find(1);
 
-    $user->achieve(new UsersFirstPost());
+$user->achieve(new UsersFirstPost());
 ```
 
 ...or use `Achievement` to unlock achievements.
 
 ```php
-    $user = App\User::find(1);
+$user = App\User::find(1);
 
-    Achievement::unlock($user, new UsersFirstPost());
+Achievement::unlock($user, new UsersFirstPost());
 ```
 
 ### Accessing Achievements
@@ -87,9 +87,9 @@ Use `Achiever` trait on entities that can unlock achievements.
 Get all of the achievements unlocked.
 
 ```php
-    $user = App\User::find(1);
+$user = App\User::find(1);
 
-    $user->achievements()->get();
+$user->achievements()->get();
 ```
 
 ## Tests
@@ -115,7 +115,7 @@ See [CHANGELOG](CHANGELOG.md) for details on what has changed.
 
 I organize the [gm(48)](https://gm48.net), a quarterly 48 hours GameMaker game jam, and I work as a Web Developer in Denmark on Laravel and WordPress websites.
 
-Follow me[@tehwave](https://twitter.com/tehwave) on Twitter!
+Follow me [@tehwave](https://twitter.com/tehwave) on Twitter!
 
 ## License
 
