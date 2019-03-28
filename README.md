@@ -36,7 +36,7 @@ For any security related issues, send a mail to [peterchrjoergensen+achievements
 
 I'm a web developer from Denmark.
 
-Hit me up [@tehwave](https://github.com/tehwave) on Twitter!
+Hit me up [@tehwave](https://twitter.com/tehwave) on Twitter!
 
 ## License
 
