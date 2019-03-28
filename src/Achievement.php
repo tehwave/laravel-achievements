@@ -8,13 +8,6 @@ use tehwave\Achievements\Contracts\AchievementContract;
 class Achievement implements AchievementContract
 {
     /**
-     * The unique identifier for the achievement.
-     *
-     * @var string
-     */
-    public $id;
-
-    /**
      * The name of this achievement.
      *
      * @var string
