@@ -1,5 +1,3 @@
-**THIS PACKAGE IS A WORK IN PROGRESS**
-
 # Laravel Achievements
 
 Super Simple Achievements.
