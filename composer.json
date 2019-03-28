@@ -1,0 +1,30 @@
+{
+    "name": "tehwave/laravel-achievements",
+    "description": "Super Simple Achievements",
+    "keywords": [
+        "tehwave",
+        "achievements",
+        "badges",
+        "laravel",
+        "package"
+    ],
+    "homepage": "https://github.com/tehwave/laravel-achievements",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Peter Jørgensen",
+            "email": "peterchrjoergensen@gmail.com",
+            "homepage": "https://peterchrjoergensen.dk",
+            "role": "Developer"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "tehwave\\Achievements\\": "src"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
