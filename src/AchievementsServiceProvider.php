@@ -12,6 +12,10 @@ class AchievementsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishes([
+            __DIR__ . '/../config/achievements.php' => config_path('achievements.php'),
+        ], 'config');
+
         $this->bootCommands();
     }
 
@@ -27,5 +31,15 @@ class AchievementsServiceProvider extends ServiceProvider
                 MakeAchievement::class,
             ]);
         }
+    }
+
+    /**
+     * Register the application services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this->mergeConfigFrom(__DIR__ . '/../config/achievements.php', 'achievements');
     }
 }
