@@ -33,13 +33,13 @@ There are no tests for this package as I don't know how to write them.
 
 However, the package is stable ~~enough~~ for a production environment, as I'm using it for [gm48.net](https://gm48.net), which is written in Laravel 5.7 and running on PHP 7.2.
 
-## Changelog
-
-See [CHANGELOG](CHANGELOG.md) for details on what has changed.
-
 ## Security
 
 For any security related issues, send a mail to [peterchrjoergensen+achievements@gmail.com](mailto:peterchrjoergensen+achievements@gmail.com) instead of using the issue tracker.
+
+## Changelog
+
+See [CHANGELOG](CHANGELOG.md) for details on what has changed.
 
 ## Credits
 
