@@ -2,6 +2,8 @@
 
 namespace tehwave\Achievements\Traits;
 
+use tehwave\Achievements\Achievement;
+
 trait Achiever
 {
     /**
