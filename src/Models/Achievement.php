@@ -40,6 +40,36 @@ class Achievement extends Model
     }
 
     /**
+     * Get the achievement class associated with the model.
+     *
+     * @return string
+     */
+    public function getClass()
+    {
+        return app($this->type);
+    }
+
+    /**
+     * Get the achievement's name.
+     *
+     * @return string
+     */
+    public function getNameAttribute()
+    {
+        $this->getClass()->getName();
+    }
+
+    /**
+     * Get the achievement's name.
+     *
+     * @return string
+     */
+    public function getDescriptionAttribute()
+    {
+        $this->getClass()->getDescription();
+    }
+
+    /**
      * Get the achiever entity that the achievement belongs to.
      */
     public function achiever()
