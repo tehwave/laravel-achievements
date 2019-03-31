@@ -60,7 +60,7 @@ class Achievement extends Model
     }
 
     /**
-     * Get the achievement's name.
+     * Get the achievement's description.
      *
      * @return string
      */
