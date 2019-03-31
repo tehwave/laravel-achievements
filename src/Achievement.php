@@ -75,4 +75,58 @@ class Achievement implements AchievementContract
             'data' => $achievement->getData($achievement),
         ]);
     }
+
+    /**
+     * Get the all of the achievement classes.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public static function getClasses()
+    {
+        $directory = app()->path('Achievements');
+
+        return collect(scandir($directory))
+            ->diff(['..', '.'])
+            ->values();
+    }
+
+    /**
+     * Get the all of the achievement classes in namespace.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public static function getNamespacedClasses()
+    {
+        return self::getClasses()
+            ->transform(function ($class) {
+                return sprintf(
+                    '%sAchievements\%s',
+                    app()->getNamespace(),
+                    rtrim($class, '.php')
+                );
+            });
+    }
+
+    /**
+     * Get the all of the achievement classes instantiated.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public static function getClassesInstantiated()
+    {
+        return self::getNamespacedClasses()
+            ->transform(function ($class) {
+                return new $class();
+            });
+    }
+
+    /**
+     * Shorthand function for getInstantiatedClasses.
+     *
+     * @return \Illuminate\Support\Collection
+     */
+    public static function all()
+    {
+        return self::getInstantiatedClasses();
+    }
 }
