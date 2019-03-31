@@ -127,6 +127,6 @@ class Achievement implements AchievementContract
      */
     public static function all()
     {
-        return self::getInstantiatedClasses();
+        return self::getClassesInstantiated();
     }
 }
