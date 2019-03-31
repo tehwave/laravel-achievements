@@ -63,12 +63,16 @@ class Achievement implements AchievementContract
      * Unlocks an achievement.
      *
      * @param  mixed  $achiever
-     * @param  mixed  $achievement
+     * @param  mixed|null  $achievement
      *
      * @return \Illuminate\Database\Eloquent\Model
      */
-    public static function unlock($achiever, $achievement)
+    public static function unlock($achiever, $achievement = null)
     {
+        if (is_null($achievement)) {
+            $achievement = $this;
+        }
+
         return $achiever->achievements()->create([
             'id' => Str::uuid()->toString(),
             'type' => get_class($achievement),
