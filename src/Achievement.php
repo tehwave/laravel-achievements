@@ -98,7 +98,7 @@ class Achievement implements AchievementContract
     public static function getNamespacedClasses()
     {
         return self::getClasses()
-            ->transform(function ($class) {
+            ->transform(function($class) {
                 return sprintf(
                     '%sAchievements\%s',
                     app()->getNamespace(),
@@ -115,7 +115,7 @@ class Achievement implements AchievementContract
     public static function getClassesInstantiated()
     {
         return self::getNamespacedClasses()
-            ->transform(function ($class) {
+            ->transform(function($class) {
                 return new $class();
             });
     }
