@@ -7,6 +7,13 @@ use Illuminate\Database\Eloquent\Model;
 class Achievement extends Model
 {
     /**
+     * The "type" of the ID.
+     *
+     * @var string
+     */
+    protected $keyType = 'string';
+
+    /**
      * Indicates if the IDs are auto-incrementing.
      *
      * @var bool
