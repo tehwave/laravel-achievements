@@ -62,7 +62,7 @@ class Achievement implements AchievementContract
     /**
      * Unlocks an achievement.
      *
-     * @param  mixed  $achievers
+     * @param  mixed  $achiever
      * @param  mixed  $achievement
      *
      * @return \Illuminate\Database\Eloquent\Model
