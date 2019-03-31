@@ -22,6 +22,24 @@ class Achievement implements AchievementContract
     public $description;
 
     /**
+     * Get the name of this achievement.
+     *
+     * @return string
+     */
+    public function getName() {
+        return $this->name;
+    }
+
+    /**
+     * Get the description of this achievement.
+     *
+     * @return string
+     */
+    public function getDescription() {
+        return $this->description;
+    }
+
+    /**
      * Get the data of the achievement.
      *
      * @param  mixed  $achievement
