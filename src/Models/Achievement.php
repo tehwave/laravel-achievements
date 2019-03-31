@@ -56,7 +56,7 @@ class Achievement extends Model
      */
     public function getNameAttribute()
     {
-        $this->getClass()->getName();
+        return $this->getClass()->getName();
     }
 
     /**
@@ -66,7 +66,7 @@ class Achievement extends Model
      */
     public function getDescriptionAttribute()
     {
-        $this->getClass()->getDescription();
+        return $this->getClass()->getDescription();
     }
 
     /**
