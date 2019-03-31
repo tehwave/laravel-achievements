@@ -2,6 +2,10 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v0.3.0 - 31-03-2019
+
+- Add functions to get achievement classes
+
 ## v0.2.0 - 31-03-2019
 
 - Update README
