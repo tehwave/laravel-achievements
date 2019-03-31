@@ -26,7 +26,8 @@ class Achievement implements AchievementContract
      *
      * @return string
      */
-    public function getName() {
+    public function getName()
+    {
         return $this->name;
     }
 
@@ -35,7 +36,8 @@ class Achievement implements AchievementContract
      *
      * @return string
      */
-    public function getDescription() {
+    public function getDescription()
+    {
         return $this->description;
     }
 
