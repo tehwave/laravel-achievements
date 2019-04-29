@@ -55,7 +55,7 @@ class Achievement implements AchievementContract
      */
     public function getIcon()
     {
-        if (Str::contains(['http://', 'https://', '//'])) {
+        if (Str::contains($this->icon, ['http://', 'https://', '//'])) {
             return $this->icon;
         }
 
