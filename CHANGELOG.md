@@ -2,7 +2,7 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
-## v0.4.2 - 29-04-2019
+## v0.5.0 - 29-04-2019
 
 - Add missing icon attribute
 - Add way of getting name when no variable has been set
