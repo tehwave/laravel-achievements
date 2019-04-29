@@ -8,10 +8,8 @@ Super Simple Achievements.
 
 ## Requirements
 
-- Laravel 5.7
-- PHP 7.2
-
-The package supports the above versions, but may work on older or newer versions.
+- Laravel 5.8
+- PHP 7.1
 
 ## Installation
 
