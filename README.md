@@ -1,6 +1,6 @@
 # Laravel Achievements
 
-Super Simple Achievements.
+Simple, elegant Achievements the Laravel way.
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![StyleCI](https://styleci.io/repos/178260666/shield)](https://styleci.io/repos/178260666)
