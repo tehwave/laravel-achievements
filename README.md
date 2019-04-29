@@ -98,7 +98,7 @@ $user->achievements()->get();
 
 There are no tests for this package as I don't know how to write them.
 
-However, the package is stable ~~enough~~ for a production environment. Case in point, I'm using it for [gm48.net](https://gm48.net), which is written in Laravel 5.7 and running on PHP 7.2.
+However, the package is stable ~~enough~~ for a production environment. Case in point, I'm using it for [gm48.net](https://gm48.net), which is written in Laravel 5.8 and running on PHP 7.2.
 
 ## Security
 
