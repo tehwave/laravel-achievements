@@ -81,7 +81,7 @@ $user->achieve(new \App\Achievements\UsersFirstPost());
 ```php
 $user = App\User::find(1);
 
-tehwave\Achievements\Achievement::unlock($user, new \App\Achievements\UsersFirstPost());
+\tehwave\Achievements\Achievement::unlock($user, new \App\Achievements\UsersFirstPost());
 ```
 
 ### Accessing Achievements
