@@ -35,6 +35,14 @@ class Achievement implements AchievementContract
      */
     public function getName()
     {
+        if (empty($this->name)) {
+            return preg_replace(
+                '/(?<!\ )[A-Z]/',
+                ' $0',
+                (new \ReflectionClass($this))->getShortName()
+            );
+        }
+
         return $this->name;
     }
 
