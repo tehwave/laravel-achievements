@@ -2,6 +2,10 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v0.4.1 - 29-04-2019
+
+- Fix missing haystack
+
 ## v0.4.0 - 29-04-2019
 
 - Update README
