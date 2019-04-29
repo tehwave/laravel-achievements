@@ -22,6 +22,13 @@ class Achievement implements AchievementContract
     public $description;
 
     /**
+     * The icon of this achievement.
+     *
+     * @var string
+     */
+    public $icon;
+
+    /**
      * Get the name of this achievement.
      *
      * @return string
@@ -39,6 +46,20 @@ class Achievement implements AchievementContract
     public function getDescription()
     {
         return $this->description;
+    }
+
+    /**
+     * Get the icon of this achievement.
+     *
+     * @return string
+     */
+    public function getIcon()
+    {
+        if (Str::contains(['http://', 'https://', '//'])) {
+            return $this->icon;
+        }
+
+        return asset($this->icon);
     }
 
     /**
