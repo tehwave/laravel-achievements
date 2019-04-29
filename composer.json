@@ -19,7 +19,14 @@
             "role": "Developer"
         }
     ],
-    "require": {},
+    "require": {
+        "php": "^7.1",
+        "illuminate/console": "^5.8",
+        "illuminate/database": "^5.8",
+        "illuminate/filesystem": "^5.8",
+        "illuminate/support": "^5.8",
+        "ramsey/uuid": "^3.8"
+    },
     "autoload": {
         "psr-4": {
             "tehwave\\Achievements\\": "src"
