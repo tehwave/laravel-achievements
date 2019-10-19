@@ -21,6 +21,13 @@ class DummyClass extends Achievement
     public $description = "";
 
     /**
+     * The icon of this achievement.
+     *
+     * @var string
+     */
+    public $icon = "";
+
+    /**
      * Get the data representation of the achievement.
      *
      * @return array
