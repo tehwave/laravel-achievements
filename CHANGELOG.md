@@ -2,6 +2,17 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v0.7.0 - 19-10-2019
+
+- Add `getIconAsAsset` as attribute to achievement model
+- Change data on achievements to be nullable
+- Fix achievement contract
+
+## v0.6.0 - 19-10-2019
+
+- Change `getIcon` into a simple getter
+- Add `getIconAsAsset` to retrieve icon with a path
+
 ## v0.5.0 - 29-04-2019
 
 - Add missing icon attribute
