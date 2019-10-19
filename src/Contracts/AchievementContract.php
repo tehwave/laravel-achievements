@@ -19,26 +19,26 @@ interface AchievementContract
      *
      * @return string
      */
-    public function getNameAttribute();
+    public function getName();
 
     /**
      * Get the achievement's description.
      *
      * @return string
      */
-    public function getDescriptionAttribute();
+    public function getDescription();
 
     /**
      * Get the achievement's icon.
      *
      * @return string
      */
-    public function getIconAttribute();
+    public function getIcon();
 
     /**
      * Get the achievement's icon as an asset.
      *
      * @return string
      */
-    public function getIconAsAssetAttribute();
+    public function getIconAsAsset();
 }
