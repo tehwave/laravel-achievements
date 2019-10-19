@@ -87,6 +87,16 @@ class Achievement extends Model
     }
 
     /**
+     * Get the achievement's icon as an asset.
+     *
+     * @return string
+     */
+    public function getIconAsAssetAttribute()
+    {
+        return $this->getClass()->getIconAsAsset();
+    }
+
+    /**
      * Get the achiever entity that the achievement belongs to.
      */
     public function achiever()
