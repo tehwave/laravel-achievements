@@ -85,8 +85,6 @@ class Achievement implements AchievementContract
      *
      * @param  mixed  $achievement
      * @return array
-     *
-     * @throws \RuntimeException
      */
     protected function getData($achievement)
     {
@@ -94,8 +92,6 @@ class Achievement implements AchievementContract
             return is_array($data = $achievement->toDatabase())
                 ? $data : $data->data;
         }
-
-        throw new RuntimeException('Achievement is missing toDatabase method.');
     }
 
     /**

@@ -16,7 +16,7 @@ class CreateAchievementsTable extends Migration
             $table->uuid('id')->primary();
             $table->string('type');
             $table->morphs('achiever');
-            $table->text('data');
+            $table->text('data')->nullable();
             $table->timestamps();
         });
     }
