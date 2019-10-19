@@ -92,7 +92,7 @@ class Achievement implements AchievementContract
     {
         if (method_exists($achievement, 'toDatabase')) {
             return is_array($data = $achievement->toDatabase())
-                                ? $data : $data->data;
+                ? $data : $data->data;
         }
 
         throw new RuntimeException('Achievement is missing toDatabase method.');
