@@ -63,7 +63,17 @@ class Achievement implements AchievementContract
      */
     public function getIcon()
     {
-        if (Str::contains($this->icon, ['http://', 'https://', '//'])) {
+        return $this->icon;
+    }
+
+    /**
+     * Get the icon of this achievement with path.
+     *
+     * @return string
+     */
+    public function getIconAsAsset()
+    {
+        if (Str::startsWith($this->icon, ['http://', 'https://', '//'])) {
             return $this->icon;
         }
 
