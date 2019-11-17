@@ -20,11 +20,11 @@
         }
     ],
     "require": {
-        "php": "^7.1",
-        "illuminate/console": "^5.8",
-        "illuminate/database": "^5.8",
-        "illuminate/filesystem": "^5.8",
-        "illuminate/support": "^5.8",
+        "php": ">=7.1",
+        "illuminate/console": "^5.8|^6.0",
+        "illuminate/database": "^5.8|^6.0",
+        "illuminate/filesystem": "^5.8|^6.0",
+        "illuminate/support": "^5.8|^6.0",
         "ramsey/uuid": "^3.8"
     },
     "autoload": {
