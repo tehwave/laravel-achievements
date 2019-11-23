@@ -10,7 +10,6 @@ Any notable changes to `Laravel Achievements` will be documented in this file.
 
 - Fix achievement contract
 
-
 ## v0.7.0 - 19-10-2019
 
 - Add `getIconAsAsset` as attribute to achievement model
