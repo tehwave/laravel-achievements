@@ -2,6 +2,10 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v0.8.0 - 23-11-2019
+
+- Add `Laravel 6` support
+
 ## v0.7.1 - 19-10-2019
 
 - Fix achievement contract
