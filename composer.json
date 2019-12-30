@@ -20,17 +20,30 @@
         }
     ],
     "require": {
-        "php": ">=7.1",
+        "php": "^7.1.3",
         "illuminate/console": "^5.8|^6.0",
         "illuminate/database": "^5.8|^6.0",
         "illuminate/filesystem": "^5.8|^6.0",
         "illuminate/support": "^5.8|^6.0",
         "ramsey/uuid": "^3.8"
     },
+    "require-dev": {
+        "orchestra/testbench": "^3.8|^4.0",
+        "phpunit/phpunit": "^7.5|^8.0"
+    },
     "autoload": {
         "psr-4": {
             "tehwave\\Achievements\\": "src"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "tehwave\\Achievements\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
     },
     "extra": {
         "laravel": {
