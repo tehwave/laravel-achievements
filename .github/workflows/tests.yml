@@ -17,6 +17,7 @@ jobs:
             testbench: 3.8.*
           - laravel: 6.*
             testbench: 4.*
+            php: 7.2
 
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
 
