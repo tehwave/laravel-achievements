@@ -3,7 +3,7 @@
 namespace tehwave\Achievements\Tests;
 
 use Orchestra\Testbench\TestCase as Orchestra;
-use tehwave\Achievements\Providers\AchievementsServiceProvider;
+use tehwave\Achievements\AchievementsServiceProvider;
 
 abstract class TestCase extends Orchestra
 {
