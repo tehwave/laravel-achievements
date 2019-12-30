@@ -9,7 +9,7 @@ class MakeAchievementTest extends TestCase
      *
      * @return void
      */
-    protected function setUp()
+    protected function setUp(): void
     {
         parent::setUp();
 
@@ -23,7 +23,7 @@ class MakeAchievementTest extends TestCase
      *
      * @return void
      */
-    public function testCommandMakesFile()
+    public function testCommandMakesFile(): void
     {
         $this->artisan('make:achievement', ['name' => 'HelloWorld'])->assertExitCode(0);
 
