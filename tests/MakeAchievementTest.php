@@ -13,7 +13,7 @@ class MakeAchievementTest extends TestCase
     {
         parent::setUp();
 
-        if (file_exists($path = $this->app->path('Achievements') . '/HelloWorld.php')) {
+        if (file_exists($path = $this->app->path('Achievements').'/HelloWorld.php')) {
             unlink($path);
         }
     }
@@ -27,6 +27,6 @@ class MakeAchievementTest extends TestCase
     {
         $this->artisan('make:achievement', ['name' => 'HelloWorld'])->assertExitCode(0);
 
-        $this->assertFileExists($this->app->path('Achievements') . '/HelloWorld.php');
+        $this->assertFileExists($this->app->path('Achievements').'/HelloWorld.php');
     }
 }
