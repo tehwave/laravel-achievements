@@ -10,7 +10,7 @@ interface AchievementContract
      * @param  mixed  $achiever
      * @param  mixed  $achievement
      *
-     * @return void
+     * @return object
      */
     public static function unlock($achiever, $achievement);
 

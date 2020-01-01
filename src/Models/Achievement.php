@@ -49,7 +49,7 @@ class Achievement extends Model
     /**
      * Get the achievement class associated with the model.
      *
-     * @return string
+     * @return object
      */
     public function getClass()
     {
@@ -98,6 +98,8 @@ class Achievement extends Model
 
     /**
      * Get the achiever entity that the achievement belongs to.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
     public function achiever()
     {
