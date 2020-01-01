@@ -2,6 +2,10 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v1.0.0 - 01-01-2020
+
+- Release
+
 ## v0.8.0 - 23-11-2019
 
 - Add `Laravel 6` support
