@@ -100,7 +100,7 @@ class Achievement implements AchievementContract
      * @param  mixed  $achiever
      * @param  mixed  $achievement
      *
-     * @return \Illuminate\Database\Eloquent\Model
+     * @return object
      */
     public static function unlock($achiever, $achievement)
     {

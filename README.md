@@ -9,6 +9,8 @@ Simple, elegant Achievements the Laravel way.
 
 ## Requirements
 
+The package has been developed and tested to work with the following minimum requirements:
+
 - Laravel 5.8
 - PHP 7.1
 
@@ -40,7 +42,13 @@ php artisan vendor:publish --tag="achievements-config"
 
 ## Usage
 
-`Laravel Achievements` work much like Laravel's notifications.
+`Laravel Achievements` work much like Laravel's [notifications](https://laravel.com/docs/notifications).
+
+```php
+$user = \App\User::find(1);
+
+$user->achieve(new \App\Achievements\UsersFirstPost());
+```
 
 ### Creating Achievements
 
@@ -48,11 +56,13 @@ php artisan vendor:publish --tag="achievements-config"
 php artisan make:achievement UsersFirstPost
 ```
 
-This command will place a fresh `Achievement` class in your new `app/Achievements` directory. Each `Achievement` class contains a `toDatabase` method, that you may use to store additional data with the achievement, and a couple of variables for basic meta information.
+This command will place a fresh `Achievement` class in your new `app/Achievements` directory.
+
+Each `Achievement` class contains a `toDatabase` method, that you may use to store additional data with the achievement, and a few properties for basic meta information.
 
 ### Unlocking Achievements
 
-Use `Achiever` trait on entities that can unlock achievements.
+Use `Achiever` trait on models that can unlock achievements.
 
 ```php
 <?php
@@ -72,7 +82,7 @@ class User
 *Achieve* an achievement via the `achieve` method.
 
 ```php
-$user = App\User::find(1);
+$user = \App\User::find(1);
 
 $user->achieve(new \App\Achievements\UsersFirstPost());
 ```
@@ -80,7 +90,7 @@ $user->achieve(new \App\Achievements\UsersFirstPost());
 ...or use `Achievement` class to unlock achievements.
 
 ```php
-$user = App\User::find(1);
+$user = \App\User::find(1);
 
 \tehwave\Achievements\Achievement::unlock($user, new \App\Achievements\UsersFirstPost());
 ```
@@ -90,7 +100,7 @@ $user = App\User::find(1);
 Retrieve all of the entity's unlocked achievements.
 
 ```php
-$user = App\User::find(1);
+$user = \App\User::find(1);
 
 $user->achievements()->get();
 ```
@@ -109,6 +119,10 @@ For any security related issues, send a mail to [peterchrjoergensen+achievements
 
 See [CHANGELOG](CHANGELOG.md) for details on what has changed.
 
+## Contributions
+
+See [CONTRIBUTING](CONTRIBUTING.md) for details on how to contribute.
+
 ## Credits
 
 - [Peter Jørgensen](https://github.com/tehwave)
@@ -118,7 +132,7 @@ Inspired by https://github.com/gstt/laravel-achievements
 
 ## About
 
-I organize the [gm(48)](https://gm48.net), a quarterly 48 hours GameMaker game jam, and I work as a Web Developer in Denmark on Laravel and WordPress websites.
+I work as a Web Developer in Denmark on Laravel and WordPress websites.
 
 Follow me [@tehwave](https://twitter.com/tehwave) on Twitter!
 

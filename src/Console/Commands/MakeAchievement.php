@@ -1,6 +1,6 @@
 <?php
 
-namespace tehwave\Achievements\Commands;
+namespace tehwave\Achievements\Console\Commands;
 
 use Illuminate\Console\GeneratorCommand;
 
@@ -34,7 +34,7 @@ class MakeAchievement extends GeneratorCommand
      */
     protected function getStub()
     {
-        return __DIR__.'/../Stubs/Achievement.stub';
+        return __DIR__.'/../../../stubs/Achievement.stub';
     }
 
     /**

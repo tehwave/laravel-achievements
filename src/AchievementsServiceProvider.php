@@ -3,7 +3,7 @@
 namespace tehwave\Achievements;
 
 use Illuminate\Support\ServiceProvider;
-use tehwave\Achievements\Commands\MakeAchievement;
+use tehwave\Achievements\Console\Commands\MakeAchievement;
 
 class AchievementsServiceProvider extends ServiceProvider
 {
