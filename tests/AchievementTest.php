@@ -31,7 +31,7 @@ class AchievementTest extends TestCase
         $achievement = new TestAchievement;
         $achievement->name = null;
 
-        $this->assertSame(' Test Achievement', $achievement->getName());
+        $this->assertSame('Test Achievement', $achievement->getName());
     }
 
     /** @test */

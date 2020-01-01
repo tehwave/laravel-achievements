@@ -37,9 +37,9 @@ class Achievement implements AchievementContract
     {
         if (empty($this->name)) {
             return preg_replace(
-                '/(?<!\ )[A-Z]/',
-                ' $0',
-                (new \ReflectionClass($this))->getShortName()
+                '/([a-z])([A-Z])/s',
+                '$1 $2',
+                class_basename($this)
             );
         }
 
