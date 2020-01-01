@@ -5,6 +5,7 @@ Simple, elegant Achievements the Laravel way.
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
 [![StyleCI](https://styleci.io/repos/178260666/shield)](https://styleci.io/repos/178260666)
 [![Quality Score](https://img.shields.io/scrutinizer/g/tehwave/laravel-achievements.svg?style=flat-square)](https://scrutinizer-ci.com/g/tehwave/laravel-achievements)
+![Build Status](https://github.com/tehwave/laravel-achievements/workflows/tests/badge.svg)
 
 ## Requirements
 
@@ -96,9 +97,9 @@ $user->achievements()->get();
 
 ## Tests
 
-There are no tests for this package as I don't know how to write them.
-
-However, the package is stable ~~enough~~ for a production environment. Case in point, I'm using it for [gm48.net](https://gm48.net), which is written in Laravel 5.8 and running on PHP 7.2.
+```bash
+composer test
+```
 
 ## Security
 
