@@ -20,10 +20,9 @@ trait Achiever
     /**
      * Achieve an achievement.
      *
-     * @param  mixed  $achievers
      * @param  mixed  $achievement
      *
-     * @return \Illuminate\Database\Eloquent\Model
+     * @return object
      */
     public function achieve($achievement)
     {
