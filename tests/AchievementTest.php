@@ -2,11 +2,6 @@
 
 namespace tehwave\Achievements\Tests;
 
-use tehwave\Achievements\Achievement;
-use tehwave\Achievements\Tests\TestCase;
-use tehwave\Achievements\Tests\TestAchievement;
-use tehwave\Achievements\Models\Achievement as AchievementModel;
-
 class AchievementTest extends TestCase
 {
     /**
