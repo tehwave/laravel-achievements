@@ -1,6 +1,8 @@
 <?php
 
-namespace tehwave\Achievements\Tests;
+namespace tehwave\Achievements\Tests\Console\Commands;
+
+use tehwave\Achievements\Tests\TestCase;
 
 class MakeAchievementTest extends TestCase
 {
@@ -18,11 +20,7 @@ class MakeAchievementTest extends TestCase
         }
     }
 
-    /**
-     * Test the console command.
-     *
-     * @return void
-     */
+    /** @test */
     public function testCommandMakesFile(): void
     {
         $this->artisan('make:achievement', ['name' => 'HelloWorld'])->assertExitCode(0);
