@@ -69,9 +69,10 @@ Use `Achiever` trait on models that can unlock achievements.
 
 namespace App;
 
+use Illuminate\Database\Eloquent\Model;
 use tehwave\Achievements\Traits\Achiever;
 
-class User
+class User extends Model
 {
     use Achiever;
 
