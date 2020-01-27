@@ -32,7 +32,8 @@ class DummyClass extends Achievement
      *
      * @return array
      */
-    public function toDatabase() {
+    public function toDatabase()
+    {
         return [
             //
         ];
