@@ -53,4 +53,16 @@ class AchievementTest extends TestCase
 
         $this->assertNotSame($achievement->icon, $achievementModel->icon_as_asset);
     }
+
+    /** @test */
+    public function testModelHasAchievement(): void
+    {
+        $achievement = new TestAchievement;
+
+        $this->assertFalse($this->testModel->hasAchievement($achievement));
+
+        $this->testModel->achieve($achievement);
+
+        $this->assertTrue($this->testModel->hasAchievement($achievement));
+    }
 }

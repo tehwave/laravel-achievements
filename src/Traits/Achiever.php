@@ -28,4 +28,20 @@ trait Achiever
     {
         return Achievement::unlock($this, $achievement);
     }
+
+    /**
+     * Does the achievement exist on this entity?
+     *
+     * @param  mixed  $achievement
+     *
+     * @return bool
+     */
+    public function hasAchievement($achievement)
+    {
+        if ($achievement instanceof Achievement) {
+            $achievement = get_class($achievement);
+        }
+
+        return $this->achievements()->where('type', $achievement)->exists();
+    }
 }
