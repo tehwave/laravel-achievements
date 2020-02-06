@@ -12,7 +12,7 @@ class CreateAchievementsTable extends Migration
      */
     public function up()
     {
-        Schema::create(config('achievements.table', 'achievements'), function(Blueprint $table) {
+        Schema::create(config('achievements.table', 'achievements'), function (Blueprint $table) {
             $table->uuid('id')->primary();
             $table->string('type')->index();
             $table->morphs('achiever');
