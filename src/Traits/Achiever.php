@@ -8,7 +8,7 @@ use tehwave\Achievements\Models\Achievement as AchievementModel;
 trait Achiever
 {
     /**
-     * Get the entity's notifications.
+     * Retrieve the entity's achievements.
      *
      * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
