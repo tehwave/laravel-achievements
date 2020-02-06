@@ -106,6 +106,30 @@ $user = \App\User::find(1);
 $user->achievements()->get();
 ```
 
+### Checking if entity has Achievement
+
+On models with the `Achiever` trait, you may pass an `Achievement` instance to `hasAchievement` method to check if the specified achievement exist on the model.
+
+```php
+$achievement = new \App\Achievements\UsersFirstPost();
+
+$user = \App\User::find(1);
+
+$user->hasAchievement($achievement);
+// false
+
+$user->achieve($achievement);
+
+$user->hasAchievement($achievement);
+// true
+```
+
+Should you not want to pass an instance, you may also pass the class name.
+
+```php
+$user->hasAchievement(\App\Achievements\UsersFirstPost::class);
+```
+
 ## Tests
 
 ```bash
