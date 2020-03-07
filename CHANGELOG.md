@@ -2,6 +2,10 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v1.2.0 - 07-03-2020
+
+- Add support for `Laravel 7`
+
 ## v1.1.0 - 06-02-2020
 
 - Add `hasAchievement` method to `Achiever` trait
