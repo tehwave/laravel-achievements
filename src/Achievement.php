@@ -86,7 +86,7 @@ class Achievement implements AchievementContract
      * @param  mixed  $achievement
      * @return array
      */
-    protected function getData($achievement)
+    public function getData($achievement)
     {
         if (method_exists($achievement, 'toDatabase')) {
             return is_array($data = $achievement->toDatabase())
@@ -97,17 +97,24 @@ class Achievement implements AchievementContract
     /**
      * Unlocks an achievement.
      *
-     * @param  mixed  $achiever
-     * @param  mixed  $achievement
+     * @param  mixed      $achiever
+     * @param  mixed      $achievement
+     * @param  array|null $data
      *
      * @return object
      */
-    public static function unlock($achiever, $achievement)
+    public static function unlock($achiever, $achievement, $data = null)
     {
+        $type = $achievement;
+
+        if ($achievement instanceof self) {
+            $type = get_class($achievement);
+        }
+
         return $achiever->achievements()->create([
             'id' => Str::uuid()->toString(),
-            'type' => get_class($achievement),
-            'data' => $achievement->getData($achievement),
+            'type' => $type,
+            'data' => $data ?? optional($achievement)->getData($achievement),
         ]);
     }
 
