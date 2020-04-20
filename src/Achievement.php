@@ -107,7 +107,7 @@ class Achievement implements AchievementContract
     {
         $type = $achievement;
 
-        if ($achievement instanceof Achievement) {
+        if ($achievement instanceof self) {
             $type = get_class($achievement);
         }
 
