@@ -2,6 +2,11 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v1.3.0 - 20-04-2020
+
+- Add support for unlocking achievement without an Achievement instance
+- Add support for unlocking achievement with specified data
+
 ## v1.2.0 - 07-03-2020
 
 - Add support for `Laravel 7`
