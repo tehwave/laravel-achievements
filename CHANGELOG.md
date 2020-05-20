@@ -2,6 +2,10 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v1.3.1 - 20-05-2020
+
+- Add ramsey/uuid ^4.0 support
+
 ## v1.3.0 - 20-04-2020
 
 - Add support for unlocking achievement without an Achievement instance
