@@ -30,7 +30,7 @@ jobs:
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v1
+        uses: actions/checkout@v2.3.4
       - name: Cache dependencies
         uses: actions/cache@v2.1.3
         with:
