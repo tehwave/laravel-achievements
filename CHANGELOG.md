@@ -2,6 +2,11 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v1.4.0 - 07-03-2021
+
+- Add PHP 8 support
+- Add Laravel 8 support
+
 ## v1.3.1 - 20-05-2020
 
 - Add ramsey/uuid ^4.0 support
