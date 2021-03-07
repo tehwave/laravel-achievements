@@ -9,16 +9,25 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        php: [7.1, 7.2, 7.3, 7.4]
-        laravel: [5.8, 6.*, 7.*]
+        php: [7.1, 7.2, 7.3, 7.4, 8.0]
+        laravel: [5.8, 6.*, 7.*, 8.*]
         dependency-version: [prefer-lowest, prefer-stable]
         exclude:
+          - laravel: 5.8
+            php: 7.4
+            dependency-version: prefer-lowest
+          - laravel: 5.8
+            php: 8.0
           - laravel: 6.*
             php: 7.1
           - laravel: 7.*
             php: 7.1
-          - laravel: 5.8
-            php: 7.4
+          - laravel: 8.*
+            php: 7.1
+          - laravel: 8.*
+            php: 7.2
+            # Some issues with Mockery?
+          - php: 8.0
             dependency-version: prefer-lowest
         include:
           - laravel: 5.8
@@ -27,6 +36,8 @@ jobs:
             testbench: 4.*
           - laravel: 7.*
             testbench: 5.*
+          - laravel: 8.*
+            testbench: ^6.3
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
     steps:
       - name: Checkout code
