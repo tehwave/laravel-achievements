@@ -21,7 +21,6 @@ trait Achiever
      * Achieve an achievement.
      *
      * @param  mixed  $achievement
-     *
      * @return object
      */
     public function achieve($achievement)
@@ -33,7 +32,6 @@ trait Achiever
      * Does the achievement exist on this entity?
      *
      * @param  mixed  $achievement
-     *
      * @return bool
      */
     public function hasAchievement($achievement)
