@@ -97,10 +97,9 @@ class Achievement implements AchievementContract
     /**
      * Unlocks an achievement.
      *
-     * @param  mixed      $achiever
-     * @param  mixed      $achievement
-     * @param  array|null $data
-     *
+     * @param  mixed  $achiever
+     * @param  mixed  $achievement
+     * @param  array|null  $data
      * @return object
      */
     public static function unlock($achiever, $achievement, $data = null)
