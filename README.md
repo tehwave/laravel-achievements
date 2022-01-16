@@ -16,7 +16,7 @@ The package has been developed and tested to work with the following minimum req
 - Laravel 5.8
 - PHP 7.1
 
-Tests fail due to not compatible with PHP 8.1 per required packages not compatible yet.
+> Tests are failing due to missing compatibility with PHP 8.1 as the required packages have not been made compatible by their respective authors yet.
 
 ## Installation
 
