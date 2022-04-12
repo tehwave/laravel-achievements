@@ -77,6 +77,9 @@ jobs:
           - laravel: ^9.0
             testbench: ^7.0
 
+          - php: 8.1
+            laravel: ^8.6.3
+
     name: P${{ matrix.php }} - L${{ matrix.laravel }} - ${{ matrix.dependency-version }}
 
     steps:
