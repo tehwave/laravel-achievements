@@ -97,7 +97,7 @@ jobs:
           coverage: none
 
       - name: Set Minimum PHP 8.1 Versions
-        uses: nick-invision/retry@v1
+        uses: nick-invision/retry@v2
         with:
           timeout_minutes: 5
           max_attempts: 5
