@@ -2,6 +2,10 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v1.5.0 - 21-04-2022
+
+- Add Laravel 9 support
+
 ## v1.4.0 - 07-03-2021
 
 - Add PHP 8 support
