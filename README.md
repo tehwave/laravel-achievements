@@ -11,12 +11,11 @@ Simple, elegant Achievements the Laravel way.
 
 ## Requirements
 
-The package has been developed and tested to work with the following minimum requirements:
+The package has been developed and tested to work with the latest versions of PHP and Laravel as well as the following minimum requirements:
 
 - Laravel 5.8
 - PHP 7.1
 
-> Tests are failing due to missing compatibility with PHP 8.1 as the required packages have not been made compatible by their respective authors yet.
 
 ## Installation
 
