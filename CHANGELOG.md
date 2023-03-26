@@ -2,11 +2,11 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
-## v1.6.1 - 26-03-2022
+## v1.6.1 - 26-03-2023
 
 - Fix formatting in `composer.json`
 
-## v1.6.0 - 26-03-2022
+## v1.6.0 - 26-03-2023
 
 - Add Laravel 10 support
 
