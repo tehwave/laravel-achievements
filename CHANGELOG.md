@@ -2,6 +2,10 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v1.6.0 - 26-03-2022
+
+- Add Laravel 10 support
+
 ## v1.5.0 - 21-04-2022
 
 - Add Laravel 9 support
