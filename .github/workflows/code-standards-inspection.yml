@@ -1,0 +1,31 @@
+name: Code Standards Inspection
+
+on:
+  pull_request:
+    branches-ignore:
+      - 'dependabot/**'
+
+jobs:
+  sniff:
+    runs-on: ubuntu-latest
+
+    concurrency:
+      group: ${{ github.workflow }}-sniff-${{ github.ref }}
+      cancel-in-progress: true
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up PHP
+      uses: shivammathur/setup-php@v2
+      with:
+        php-version: '8.2'
+        tools: composer
+        coverage: none
+
+    - name: Install dependencies
+      uses: ramsey/composer-install@v3
+
+    - name: Sniff
+      run: composer sniff

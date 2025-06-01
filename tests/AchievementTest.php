@@ -26,7 +26,7 @@ class AchievementTest extends TestCase
     protected $sansHttpIcon = '//localhost/TestAchievement.png';
 
     /** @test */
-    public function testNameRetrievedFromClassName(): void
+    public function test_name_retrieved_from_class_name(): void
     {
         $achievement = new TestAchievement;
         $achievement->name = null;
@@ -35,7 +35,7 @@ class AchievementTest extends TestCase
     }
 
     /** @test */
-    public function testIconAsAssetKeepsHttpProtocol(): void
+    public function test_icon_as_asset_keeps_http_protocol(): void
     {
         $achievement = new TestAchievement;
 

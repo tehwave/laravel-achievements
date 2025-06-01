@@ -157,7 +157,7 @@ class Achievement implements AchievementContract
     {
         return self::getNamespacedClasses()
             ->transform(function ($class) {
-                return new $class();
+                return new $class;
             });
     }
 

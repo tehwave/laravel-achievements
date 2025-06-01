@@ -6,16 +6,21 @@
 Simple, elegant Achievements the Laravel way.
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-[![StyleCI](https://styleci.io/repos/178260666/shield)](https://styleci.io/repos/178260666)
-![Build Status](https://github.com/tehwave/laravel-achievements/workflows/tests/badge.svg)
+![Build Status](https://github.com/tehwave/laravel-achievements/workflows/automated-tests/badge.svg)
 
 ## Requirements
 
-The package has been developed and tested to work with the latest versions of PHP and Laravel as well as the following minimum requirements:
+The package has been developed and tested to work with the latest supported versions of PHP and Laravel as well as the following minimum requirements:
 
-- Laravel 5.8
-- PHP 7.1
+- Laravel 11
+- PHP 8.2
 
+### Version Compatibility
+
+| Laravel | PHP | Branch |
+|---|---|---|
+|  11+ | 8.2+ | [master](https://github.com/tehwave/laravel-achievements/tree/master) |
+|  10 and below | 8.1 and below | [1.x](https://github.com/tehwave/laravel-achievements/tree/1.x) |
 
 ## Installation
 
@@ -135,6 +140,8 @@ $user->hasAchievement(\App\Achievements\UsersFirstPost::class);
 
 ## Tests
 
+Run the following command to test the package.
+
 ```bash
 composer test
 ```
@@ -146,6 +153,10 @@ For any security related issues, send a mail to [peterchrjoergensen+achievements
 ## Changelog
 
 See [CHANGELOG](CHANGELOG.md) for details on what has changed.
+
+## Upgrade Guide
+
+See [UPGRADING](UPGRADING.md) for details on how to upgrade.
 
 ## Contributions
 
