@@ -6,7 +6,7 @@
 Simple, elegant Achievements the Laravel way.
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE)
-![Build Status](https://github.com/tehwave/laravel-achievements/workflows/automated-tests/badge.svg)
+[![Automated Tests](https://github.com/tehwave/laravel-achievements/actions/workflows/automated-tests.yml/badge.svg)](https://github.com/tehwave/laravel-achievements/actions/workflows/automated-tests.yml)
 
 ## Requirements
 
