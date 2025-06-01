@@ -8,8 +8,6 @@ class MakeAchievementTest extends TestCase
 {
     /**
      * Setup the test environment.
-     *
-     * @return void
      */
     protected function setUp(): void
     {
@@ -21,7 +19,7 @@ class MakeAchievementTest extends TestCase
     }
 
     /** @test */
-    public function testCommandMakesFile(): void
+    public function test_command_makes_file(): void
     {
         $this->artisan('make:achievement', ['name' => 'HelloWorld'])->assertExitCode(0);
 
