@@ -58,9 +58,5 @@
     },
     "config": {
         "sort-packages": true
-    },
-    "conflict": {
-        "spatie/laravel-ray": "<1.33",
-        "spatie/ray": "<1.33"
     }
 }

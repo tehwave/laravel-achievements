@@ -22,6 +22,11 @@ jobs:
             testbench: ^10.0
             phpunit: ^11.5.3
 
+        exclude:
+            - php: 8.4
+              laravel: ^11.0
+              dependency-version: prefer-lowest
+
     name: PHP ${{ matrix.php }} - Laravel ${{ matrix.laravel }} - (${{ matrix.dependency-version }}
 
     steps:
