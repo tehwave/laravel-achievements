@@ -2,6 +2,19 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v2.0.0 - 2026-03-14
+
+### What's Changed
+
+* Remove old PHP and Laravel versions that are EOL in https://github.com/tehwave/laravel-achievements/pull/81
+* Added missing schema facade on table migration by @alexjustesen in https://github.com/tehwave/laravel-achievements/pull/87
+
+### New Contributors
+
+* @alexjustesen made their first contribution in https://github.com/tehwave/laravel-achievements/pull/87
+
+**Full Changelog**: https://github.com/tehwave/laravel-achievements/compare/v1.6.1...v2.0.0
+
 ## v1.6.1 - 26-03-2023
 
 - Fix formatting in `composer.json`
