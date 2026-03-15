@@ -15,6 +15,8 @@ abstract class TestCase extends Orchestra
      */
     protected $testModel;
 
+    protected static $latestResponse;
+
     /**
      * Setup the test environment.
      */
