@@ -16,6 +16,13 @@ abstract class TestCase extends Orchestra
     protected $testModel;
 
     /**
+     * This holds the latest HTTP response from a test.
+     *
+     * @var \Illuminate\Testing\TestResponse|null
+     */
+    protected static $latestResponse;
+
+    /**
      * Setup the test environment.
      */
     protected function setUp(): void
