@@ -12,14 +12,16 @@ Simple, elegant Achievements the Laravel way.
 
 The package has been developed and tested to work with the latest supported versions of PHP and Laravel as well as the following minimum requirements:
 
-- Laravel 11
-- PHP 8.2
+- Laravel 12 or 13
+- PHP 8.2 for Laravel 12, or PHP 8.3 for Laravel 13
 
 ### Version Compatibility
 
 | Laravel | PHP | Branch |
 |---|---|---|
-|  11+ | 8.2+ | [master](https://github.com/tehwave/laravel-achievements/tree/master) |
+|  13 | 8.3+ | [master](https://github.com/tehwave/laravel-achievements/tree/master) |
+|  12 | 8.2+ | [master](https://github.com/tehwave/laravel-achievements/tree/master) |
+|  11 | 8.2+ | [2.x](https://github.com/tehwave/laravel-achievements/tree/2.x) |
 |  10 and below | 8.1 and below | [1.x](https://github.com/tehwave/laravel-achievements/tree/1.x) |
 
 ## Installation

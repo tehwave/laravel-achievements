@@ -2,6 +2,11 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## Unreleased
+
+- Add Laravel 13 support.
+- Drop Laravel 11 support.
+
 ## v2.0.0 - 2026-03-14
 
 ### What's Changed
