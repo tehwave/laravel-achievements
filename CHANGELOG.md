@@ -2,6 +2,23 @@
 
 Any notable changes to `Laravel Achievements` will be documented in this file.
 
+## v3.0.0 - 2026-06-21
+
+Laravel 13 is now supported and Laravel 11 support has been dropped.
+
+Laravel 13 requires PHP 8.3 or higher. Laravel 12 remains supported on PHP 8.2 or higher. If your application is still on Laravel 11, stay on the 2.x branch until you upgrade Laravel.
+
+### What's Changed
+
+* Fix undeclared static property $latestResponse in TestCase by @tehwave with @Copilot in https://github.com/tehwave/laravel-achievements/pull/88
+* Bump shivammathur/setup-php from 2 to 2.37.1 in /.github/workflows by @dependabot[bot] in https://github.com/tehwave/laravel-achievements/pull/90
+
+### New Contributors
+
+* @tehwave with @Copilot made their first contribution in https://github.com/tehwave/laravel-achievements/pull/88
+
+**Full Changelog**: https://github.com/tehwave/laravel-achievements/compare/v2.0.0...v3.0.0
+
 ## Unreleased
 
 - Add Laravel 13 support.
